@@ -1,0 +1,59 @@
+{
+  "savings": [
+    {
+      "id": 1,
+      "current": 5000,
+      "goal": 10000,
+      "history": [
+        {
+          "date": "2024-01",
+          "amount": 2000
+        },
+        {
+          "date": "2024-02",
+          "amount": 3500
+        },
+        {
+          "date": "2024-03",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "current": 67,
+      "goal": 78,
+      "history": []
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "category": "clothe",
+      "amount": 400
+    },
+    {
+      "id": "2",
+      "category": "Transport",
+      "amount": 100
+    },
+    {
+      "id": "3",
+      "category": "Rent",
+      "amount": 800
+    },
+    {
+      "id": "4",
+      "category": "Entertainment",
+      "amount": 150
+    },
+    {
+      "id": "5",
+      "category": "Utilities",
+      "amount": 120
+    }
+  ],
+  "income": {
+    "total": 7000
+  }
+}

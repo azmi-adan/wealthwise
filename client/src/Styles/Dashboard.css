@@ -1,0 +1,93 @@
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a2e;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Improve visibility of the Dashboard title */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #00fff5;  /* Brighter cyan for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.5); /* Glow effect */
+  }
+  
+  /* Flexbox layout for charts */
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Card styling */
+  .chart-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Limit width for better proportion */
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Smooth scaling on hover */
+  .chart-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Headings inside cards */
+  .chart-card h3 {
+    margin-bottom: 15px;
+    color: #f8b400;
+    font-size: 1.3rem; /* Slightly increased size */
+  }
+  
+  /* Make charts responsive */
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Tablet screens */
+  @media (max-width: 1024px) {
+    .chart-card {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2.2rem; /* Increase title size on medium screens */
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .charts {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .chart-card {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 2rem; /* Make title larger on small screens */
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1440px) {
+    h1 {
+      font-size: 3rem; /* Bigger title for large screens */
+      margin-bottom: 30px;
+    }
+  
+    .chart-card {
+      width: 40%;
+    }
+  }
+  

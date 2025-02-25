@@ -1,0 +1,75 @@
+
+.savings-container {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a2e;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00adb5;
+  }
+  
+  .savings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .savings-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .savings-form button {
+    padding: 10px;
+    font-size: 1rem;
+    background: #00adb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .savings-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .savings-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background: #f8b400;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+  }
+  

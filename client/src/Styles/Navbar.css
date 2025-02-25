@@ -1,0 +1,140 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(52, 75, 139, 0.8); /* Muted dark blue with transparency */
+    backdrop-filter: blur(12px);
+    padding: 15px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f4c542; /* Gold Accent */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logo a:hover {
+    color: #d9a120; /* Deeper Gold */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f1f1f1; /* Soft White */
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4c542; /* Gold Accent */
+}
+
+/* Account Dropdown */
+.auth-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.auth-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(22, 33, 62, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-dropdown:hover .dropdown {
+    display: block;
+}
+
+.auth-dropdown .dropdown li {
+    padding: 10px 20px;
+}
+
+.auth-dropdown .dropdown li a {
+    color: #f1f1f1;
+}
+
+.auth-dropdown .dropdown li a:hover {
+    color: #f4c542;
+}
+
+/* Menu Icon (Mobile) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #f1f1f1;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.open {
+    background: #f4c542;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(22, 33, 62, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 15px 0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 12px 20px;
+    }
+}
