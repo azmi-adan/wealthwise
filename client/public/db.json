@@ -1,9 +1,9 @@
 {
   "savings": [
     {
-      "id": 1,
+      "id": "1",
       "current": 5000,
-      "goal": 10000,
+      "goal": 10,
       "history": [
         {
           "date": "2024-01",
@@ -20,10 +20,15 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "current": 67,
       "goal": 78,
       "history": []
+    },
+    {
+      "id": 3,
+      "current": 67,
+      "goal": 56
     }
   ],
   "transactions": [
